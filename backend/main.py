@@ -15,7 +15,7 @@ from database import (
 from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
-origins = ["http://localhost:3001"]
+origins = ["https://sa1864225.github.io/Todo-App"]
 
 # what is a middleware? 
 # software that acts as a bridge between an operating system or database and applications, especially on a network.
