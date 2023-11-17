@@ -9,7 +9,7 @@ function App() {
   const[desc,setDesc] = useState('');
   
   useEffect(()=>{
-    axios.get(`http://localhost:8000/api/todo`).then(res=>{
+    axios.get(`https://fastapi-vl98.onrender.com/api/todo`).then(res=>{
       setTodoList(res.data);
     })
     .catch(error => {
@@ -17,7 +17,7 @@ function App() {
     })
   });
   const addTodoHandler=()=>{
-    axios.post(`http://localhost:8000/api/todo/`,{"title":title,'description':desc}).then(res=>console.log(res))
+    axios.post(`https://fastapi-vl98.onrender.com/api/todo/`,{"title":title,'description':desc}).then(res=>console.log(res))
     .catch(error => {
       console.error('AxiosError:', error);
     })
